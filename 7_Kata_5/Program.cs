@@ -1,6 +1,7 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using static System.Console;
-
+﻿using static System.Console;
+//Complete the solution so that it splits the string into pairs of two characters.
+//If the string contains an odd number of characters then 
+//it should replace the missing second character of the final pair with an underscore ('_').
 string str = "abc";
 if (str.Length % 2 != 0)
     str += "_";
@@ -14,15 +15,4 @@ for (int i = 0; i < arr.Length; i++)
 foreach (var arrs in arr)
 {
     WriteLine(arrs);
-}
-string[] Solution(string str)
-{
-    if (str.Length % 2 != 0)
-        str += "_";
-    string[] arr = new string[str.Length / 2];
-    for (int i = 0; i < str.Length; i+=2)
-    {
-        str.Insert(i, " ");
-    }
-    return null;
 }
